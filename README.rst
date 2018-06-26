@@ -20,8 +20,8 @@ TargetGeneIntersect
 
 
 
-A baby package that uses pybedtools_ intersect to gain target gene names for genomic data in a pandas dataframe. My first attempt at packaging, as well as a useful little tool for something I end up copying and pasting all the time.
-.. _pybedtools: https://github.com/daler/pybedtools
+A baby package that uses `pybedtools`__ intersect to gain target gene names for genomic data in a pandas dataframe. My first attempt at packaging, as well as a useful little tool for something I end up copying and pasting all the time.
+__ https://github.com/daler/pybedtools
 
 * Free software: MIT license
 * Documentation: https://targeneintersect.readthedocs.io.
