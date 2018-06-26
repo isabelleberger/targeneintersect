@@ -20,8 +20,7 @@ TargetGeneIntersect
 
 
 
-A baby package that uses `pybedtools`__ intersect to gain target gene names for genomic data in a pandas dataframe. My first attempt at packaging, as well as a useful little tool for something I end up copying and pasting all the time.
-__ https://github.com/daler/pybedtools
+A baby package that uses `pybedtools <https://github.com/daler/pybedtools>`_ intersect to gain target gene names for genomic data in a pandas dataframe. My first attempt at packaging, as well as a useful little tool for something I end up copying and pasting all the time.
 
 * Free software: MIT license
 * Documentation: https://targeneintersect.readthedocs.io.
@@ -36,7 +35,4 @@ Features
 Credits
 -------
 
-This package is based on the BEDTools_ function intersect, as implemented in python by pybedtools_. This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-.. _BEDTools: https://github.com/arq5x/bedtools2
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+This package is based on the `BEDTools <https://github.com/arq5x/bedtools2>`_ function intersect, as implemented in python by `pybedtools <https://github.com/daler/pybedtools>`_. This package was created with `Cookiecutter <https://github.com/audreyr/cookiecutter>`_ and the `audreyr/cookiecutter-pypackage <https://github.com/audreyr/cookiecutter-pypackage>`_ project template.
