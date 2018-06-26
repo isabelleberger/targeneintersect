@@ -1,5 +1,5 @@
 Welcome to TargetGeneIntersect's documentation!
-======================================
+===============================================
 
 .. toctree::
    :maxdepth: 2
