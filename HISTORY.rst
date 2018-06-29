@@ -6,3 +6,10 @@ History
 ------------------
 
 * First release on PyPI.
+
+0.2.0 (2018-06-29)
+------------------
+
+* Fixed code style
+* Added pytest testing
+* Added travis CI
