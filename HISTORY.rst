@@ -13,3 +13,8 @@ History
 * Fixed code style
 * Added pytest testing
 * Added travis CI
+
+0.2.1 (2018-06-29)
+------------------
+
+* Fixes a mistake with travis CI 
