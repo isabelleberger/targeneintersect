@@ -33,11 +33,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     description="Use pybedtools intersect to gain target gene information in pandas dataframes",
-    entry_points={
-        'console_scripts': [
-            'targeneintersect=targeneintersect.cli:main',
-        ],
-    },
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
