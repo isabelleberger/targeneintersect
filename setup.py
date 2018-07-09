@@ -46,4 +46,5 @@ setup(
     url='https://github.com/isabelleberger/targeneintersect',
     version='0.2.1',
     zip_safe=False,
+    dependency_links=['https://github.com/arq5x/bedtools2'],
 )
