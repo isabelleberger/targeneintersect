@@ -15,7 +15,7 @@ requirements = ['Click>=6.0', 'pandas', 'pybedtools']
 
 setup_requirements = ['pytest-runner', ]
 
-test_requirements = ['pytest', 'beautifulsoup4']
+test_requirements = ['pytest', 'beautifulsoup4', 'requests']
 
 setup(
     author="Isabelle Berger",
