@@ -13,7 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = ['Click>=6.0', 'pandas', 'pybedtools']
 
-setup_requirements = ['pytest-runner', ]
+setup_requirements = ['pytest-runner', 'pysam', ]
 
 test_requirements = ['pytest', 'beautifulsoup4', 'requests']
 
