@@ -1,0 +1,61 @@
+{% set name = "targeneintersect" %}
+{% set version = "0.2.4" %}
+{% set file_ext = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash_value = "aff7ac8bbe2336ec7832ff1a86049a5eff6e7c309c7bc9083515e8d271325d1c" %}
+
+package:
+  name: '{{ name|lower }}'
+  version: '{{ version }}'
+
+source:
+  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
+  '{{ hash_type }}': '{{ hash_value }}'
+
+build:
+  number: 0
+
+requirements:
+  host:
+    - python
+    - setuptools
+    - click >=6.0
+    - pandas
+    - pybedtools
+  run:
+    - python
+    - click >=6.0
+    - pandas
+    - pybedtools
+    - bedtools
+
+test:
+  imports:
+    - targeneintersect
+  requires:
+    - beautifulsoup4
+    - pytest
+    - requests
+
+about:
+  home: https://github.com/isabelleberger/targeneintersect
+  license: MIT
+  license_family: MIT
+  license_file: ''
+  summary: Use pybedtools intersect to gain target gene information in pandas dataframes
+  description: "===================\nTargetGeneIntersect\n===================\n\n\n.. image:: https://img.shields.io/pypi/v/targeneintersect.svg\n        :target: https://pypi.python.org/pypi/targeneintersect\n\
+    \n.. image:: https://img.shields.io/travis/isabelleberger/targeneintersect.svg\n        :target: https://travis-ci.org/isabelleberger/targeneintersect\n\n.. image:: https://readthedocs.org/projects/targeneintersect/badge/?version=latest\n\
+    \        :target: https://targeneintersect.readthedocs.io/en/latest/?badge=latest\n        :alt: Documentation Status\n\n\n.. image:: https://pyup.io/repos/github/isabelleberger/targeneintersect/shield.svg\n\
+    \     :target: https://pyup.io/repos/github/isabelleberger/targeneintersect/\n     :alt: Updates\n\n\n\nA baby package that uses `pybedtools <https://github.com/daler/pybedtools>`_ intersect to gain\
+    \ target gene names for genomic data in a pandas dataframe. My first attempt at packaging, as well as a useful little tool for something I end up copying and pasting all the time.\n\n* Free software:\
+    \ MIT license\n* Documentation: https://targeneintersect.readthedocs.io.\n\n\nFeatures\n--------\n\n* Input a BED formatted gene file and a BED formatted dataframe of genomic data\n* Receive a dataframe\
+    \ that now includes target gene names\n\nCredits\n-------\n\nThis package is based on the `BEDTools <https://github.com/arq5x/bedtools2>`_ function intersect, as implemented in python by `pybedtools\
+    \ <https://github.com/daler/pybedtools>`_. This package was created with `Cookiecutter <https://github.com/audreyr/cookiecutter>`_ and the `audreyr/cookiecutter-pypackage <https://github.com/audreyr/cookiecutter-pypackage>`_\
+    \ project template.\n\n\n=======\nHistory\n=======\n\n0.1.0 (2018-06-25)\n------------------\n\n* First release on PyPI.\n\n0.2.0 (2018-06-29)\n------------------\n\n* Fixed code style\n* Added pytest\
+    \ testing\n* Added travis CI\n\n0.2.1 (2018-06-29)\n------------------\n\n* Fixes a mistake with travis CI \n\n\n"
+  doc_url: ''
+  dev_url: ''
+
+extra:
+  recipe-maintainers: ''
