@@ -13,7 +13,7 @@ with open('HISTORY.rst') as history_file:
 
 requirements = ['Click>=6.0', 'pandas', 'pybedtools']
 
-setup_requirements = ['pytest-runner', ]
+setup_requirements = ['pytest-runner']
 
 test_requirements = ['pytest', 'beautifulsoup4', 'requests']
 
@@ -44,7 +44,7 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/isabelleberger/targeneintersect',
-    version='0.2.1',
+    version='0.2.4',
     zip_safe=False,
     #dependency_links=['https://github.com/arq5x/bedtools2'],
 )
