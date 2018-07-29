@@ -9,4 +9,4 @@ twine==1.11.0
 
 pytest>=3.6.2
 pytest-runner==4.2
-beautifulsoup4==4.6.0
+beautifulsoup4==4.6.1
